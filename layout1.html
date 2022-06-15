@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Layout 1</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="layout1.css" />
+    </head>
+
+    <body>
+        <h1>Cadastro de Estudantes</h1>
+        <main>
+            <p>Preencha seus dados para fins didáticos.</p>
+            <form action="/do-something">
+                <label for="name">Nome</label>
+                <div class="fields">
+                    <input type="text" id="name" placeholder="Informe seu nome" required>
+                </div>
+                <label for="email">Email</label>
+                <div class="fields">
+                    <input type="email" id="email" placeholder="Informe seu email" required>
+                </div>
+                <label for="age">Qual a sua idade?</label>
+                <div class="fields">
+                    <input type="number" id="age" placeholder="Informe um número entre 16 e 75" min="16" max="75">
+                </div>
+                <label for="dropdown">Qual cidade você mora?</label>
+                <div class="fields">
+                    <select name="Location of positive event" id="dropdown">
+                        <option>Recife</option>
+                        <option>Olinda</option>
+                        <option>Jaboatão</option>
+                        <option>Camaragibe</option>
+                        <option>Paulista</option>
+                    </select>
+                </div>
+                <label for="transport">Como você se desloca para o IFPE?</label>
+                <div class="fields">
+                    <ul>
+                        <li>
+                            <label>
+                                Carro
+                                <input name="time-radio" type="radio" id="transport">
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                Moto
+                                <input name="time-radio" type="radio">
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                Ônibus
+                                <input name="time-radio" type="radio">
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <label for="favorite">
+                    Qual seus assuntos favoritos?
+                    <br>
+                    (Selecione todos que se apliquem)
+                </label>
+                <div class="fields">
+                    <ul>
+                        <li>
+                            <label>
+                                <input name="fav-check" type="checkbox" id="favorite">
+                                Desenvolvimento de Sistemas
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input name="fav-check" type="checkbox">
+                                Banco de Dados
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input name="fav-check" type="checkbox">
+                                Redes de Computadores
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input name="fav-check" type="checkbox">
+                                Inteligência Artificial
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input name="fav-check" type="checkbox">
+                                Computação Gráfica
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <label for="comments">
+                    Comente sobre o curso.
+                </label>
+                <div class="fields">
+                    <textarea id="comments" placeholder="Comente aqui..."></textarea>
+                </div>
+                <button type="submit">Submeter</button>
+            </form>
+        </main>
+    </body>
+
+</html>

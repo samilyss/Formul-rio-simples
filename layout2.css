@@ -1,0 +1,86 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 4 de jun. de 2022, 00:51:22
+    Author     : samil
+*/
+
+body{
+
+    background: lightblue;
+}
+table{
+    width: 99%;
+    position: relative;
+    margin: 10px 10px 10px 10px;
+    border-collapse: collapse;
+    justify-content: center;
+}
+table thead th:nth-child(even){
+    background-color: lightseagreen;
+    color: white;
+}
+table thead th:nth-child(odd){
+    background-color: darkgreen;
+    color: white;
+}
+tr:nth-child(odd) {
+    background: white;
+}
+tr:nth-child(even) {
+    background: lightgray;
+}
+td, th{
+    text-align: center;
+    height: 30px;
+}
+@media screen and (max-width: 800px){
+    body{
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+  
+  
+  
+    th {
+        display: block;
+        position: relative;
+        height: 100px;
+        vertical-align: middle;
+       
+        text-align: center;
+        width: 210px;
+       left: -2px;
+        z-index: 10;
+    
+
+    }
+    tbody{
+        background: transparent;
+        display: flex;
+        position: relative;
+        top:-611px;
+        height: 610px;
+        left:10px;
+        width: 39.8%;
+        overflow-x: auto;
+         
+    }
+    tr > td {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 100px;
+        position: relative;
+        left:200px;
+        width: 200px;
+        
+    }
+    table tr:nth-child(odd) td:nth-child(even) {
+  background: white;
+}
+table tr:nth-child(even) td:nth-child(odd) {
+  background: lightgrey;
+}

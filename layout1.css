@@ -1,0 +1,396 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 3 de jun. de 2022, 10:18:26
+    Author     : samil
+*/
+
+body{
+    margin: 0 auto;
+    background: lightblue;
+  
+}
+main{
+   
+    position:relative;
+     margin: 0 auto;
+    width: 800px;
+    height: 760px;
+    background: lightyellow;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+}
+p{
+     text-align: center;
+     position: relative;
+     top: 30px;
+}
+form{
+    margin: 0 auto;
+    width: 500px;
+    position: relative;
+     top:35px;
+     align-items: center;
+    
+}
+
+/* input name*/
+label[for="name"]{
+    position: relative;
+    left:150px;    
+}
+input#name{
+    position: relative;
+    top:-17px;
+    width: 300px;
+}
+/* input email */
+label[for="email"]{
+    position:relative;
+    left: 150px;
+}
+input#email{
+    position: relative;
+    top:-17px;
+    width: 300px;
+}
+/*input idade */
+label[for="age"]{
+     position:relative;
+    left: 78px;
+}
+input#age{
+    position: relative;
+    top:-17px;
+    width: 300px;
+}
+/*input cidade */
+label[for="dropdown"]{
+     position:relative;
+    left: 35px;
+}
+select#dropdown{
+    position: relative;
+    top:-18px;
+    float: right;
+ left: -195px;
+}
+/*input transporte*/
+label[for="transport"]{
+     position:relative;
+    left: -38px;
+    top: 25px;
+    
+}
+input[name="time-radio"]{
+    position:relative;
+    left: -25px;
+    top: -18px;
+}
+div>ul{
+    position:relative;
+    left: 200px;  
+}
+li{
+    position: relative;
+    top:6px;
+    left: -15px;
+}
+/*imput assunto */
+label[for="favorite"]{
+    position:relative;
+    left: -28px;
+    text-align: right;
+    top: 20px;
+
+}
+input[name="fav-check"]{
+      position:relative;
+    left: -25px;
+    top: 18px;
+}
+div:nth-of-type(6){
+      position: relative;
+    top:-36px;
+  
+}
+
+/* input comente*/
+label[for="comments"]{
+    position: relative;
+    left: 35px;
+}
+
+textArea#comments{
+    position: relative;
+    top: -30px;
+    left: 200px;
+    min-width: 320px;
+    min-height: 110px;
+}
+form input {
+    position: relative;
+    display: block;
+    left: 200px; 
+}
+li{
+    position: relative;
+    top:-6px;
+    left: -15px;
+}
+ul{
+    list-style: none;
+}
+button{
+    background: darkblue;
+    color: white;
+    height: 30px;
+    border-radius: 5px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    left: 40%;
+    top: -30px;
+}
+
+/*responsividade*/
+
+@media screen and (max-width: 850px){
+    main{
+        width: 80%;
+        height: 830px;
+    }
+    label[for="name"]{
+    position: relative;
+    left:185px;    
+}
+input#name{
+    position: relative;
+    top:-17px;
+    max-width: 180px;
+    left: 235px;
+}
+  label[for="email"]{
+    position:relative;
+    left: 185px;
+}
+input#email{
+    position: relative;
+    top:-17px;
+    max-width:180px;
+    left: 235px;
+}   
+input#age{
+    position: relative;
+    top:-17px;
+    width: 180px;
+    left: 235px;
+}
+label[for="age"]{
+     position:relative;
+    left: 108px;
+}
+
+label[for="dropdown"]{
+     position:relative;
+    left: 67px;
+}
+select#dropdown{
+    position: relative;
+    top:-18px;
+    float: right;
+ left: -75px;
+ width: 188px;
+}
+input[name="time-radio"]{
+    position:relative;
+    left: -20px;
+    top: -20px;
+}
+div>ul{
+    position:relative;
+    left: 200px;  
+}
+li{
+    position: relative;
+    top:-6px;
+    left: 15px;
+    word-wrap: break-word;
+    max-width: 180px;
+}
+label[for="transport"]{
+     position:relative;
+    left: 0px;
+    top: 25px;
+    margin: 5px;
+    
+}
+label[for="favorite"]{
+    position:relative;
+    left: 0px;
+    text-align: right;
+    top: 25px;
+    margin: 5px;
+
+}
+input[name="fav-check"]{
+      position:relative;
+    left: -25px;
+    top: 20px;
+}
+div:nth-of-type(6){
+      position: relative;
+    top:-36px;
+  
+}
+label[for="comments"]{
+    position: relative;
+    left: 54px;
+}
+
+textArea#comments{
+    position: relative;
+    top: -25px;
+    left: 230px;
+    min-width: 180px;
+    max-width: 250px;
+    min-height: 110px;
+}
+button{
+    background: darkblue;
+    color: white;
+    height: 30px;
+    border-radius: 5px;
+    position: absolute;
+    top:690px;
+    text-align: center;
+   
+}
+}
+@media screen and (max-width: 550px) {
+  
+  main{
+   
+    position:relative;
+     margin: 0 auto;
+     justify-content: center;
+    width: 80%;
+    height: 960px;
+    background: lightyellow;
+}
+   label[for="name"]{
+    position: relative;
+    left:30px;  
+}
+input#name{
+    position: relative;
+    top:15px;
+    max-width: 700px;
+  left: 30px;
+}
+ label[for="email"]{
+    position:relative;
+    left: 30px;
+    top: 40px;
+}
+input#email{
+    position: relative;
+    top:55px;
+    max-width:700px;
+    left: 30px;
+}   
+input#age{
+    position: relative;
+    top:87px;
+    width: 300px;
+    left: 30px;
+}
+label[for="age"]{
+     position:relative;
+    left: 30px;
+    top:77px;
+    
+}
+label[for="dropdown"]{
+     position:relative;
+    left: 30px;
+    top: 107px;
+}
+select#dropdown{
+    position: relative;
+    top:117px;
+    float: left;
+     width: 307px;
+ left: 30px;
+}
+label[for="transport"]{
+     position:relative;
+     float: left;
+    left: 25px;
+    top: 135px;
+    
+}
+input[name="time-radio"]{
+    position:relative;
+    left: -20px;
+    top: -20px;
+}
+div>ul{
+    position:relative;
+    left: -10px; 
+    top:400px;
+}
+li{
+    position: relative;
+    top:-255px;
+    left: 15px;
+    word-wrap: break-word;
+    max-width: 200px;
+}
+label[for="favorite"]{
+    position:relative;
+    left: 30px;
+    text-align: right;
+    top: 135px;
+    margin: 5px;
+
+}
+input[name="fav-check"]{
+      position:relative;
+    left: -25px;
+    top: 20px;
+}
+div:nth-of-type(6){
+      position: relative;
+    top:-26px;
+    left: 10px;
+}
+label[for="comments"]{
+    position: relative;
+    left: 30px;
+    top: 130px;
+}
+
+textArea#comments{
+    position: relative;
+    top: 145px;
+    left: 30px;
+    min-width: 320px;
+    min-height: 110px;
+}
+button{
+    background: darkblue;
+    color: white;
+    height: 30px;
+    border-radius: 5px;
+    position: relative;
+    top:150px;
+    text-align: center;
+    left:150px;
+}
+}
